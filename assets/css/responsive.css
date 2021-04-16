@@ -1,0 +1,128 @@
+/************************* 
+> -- 1920px area here -- < 
+**************************/
+@media screen and (min-width: 1920px){}
+/************************* 
+> -- 1400px area here -- < 
+**************************/
+@media screen and (min-width: 1400px){}
+/************************* 
+> -- 1366px area here -- < 
+**************************/
+@media screen and (min-width: 1366px){}
+/************************* 
+> -- 1200px area here -- < 
+**************************/
+@media screen and (min-width: 1200px){}
+/************************* 
+> -- 1124px area here -- < 
+**************************/
+@media screen and (min-width: 1124px){}
+/************************* 
+> -- 992px area here -- < 
+**************************/
+@media screen and (max-width: 992px){
+    /* header area here  */
+    .header-content ul.menu-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: #18CCAA;
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+    }
+    .menu-bar.hide {
+        display: none;
+    }
+    .header-content ul.menu-list.active{
+        left: 0;
+    }
+    .close-bar {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .header-content ul li {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .menu-bar {
+        display: flex;
+        align-items: center;
+    }
+    /* where area here  */
+    .flipping-card {
+        grid-template-columns: auto;
+        padding: 100px 50px;
+    }
+    .flipping-card .img::after {
+        width: 80px;
+        height: 80px;
+        right: -40px;
+    }
+}
+/************************* 
+> -- 768px area here -- < 
+**************************/
+@media screen and (min-width: 768px){}
+/************************* 
+> -- 576px area here -- < 
+**************************/
+@media screen and (max-width: 576px){
+    /* banner area here  */
+    .banner {
+        padding: 100px 0px;
+        height: auto;
+    }
+    .banner img.banner-img {
+        display: none;
+    }
+    .banner-content h1 {
+        font-size: 45px;
+        line-height: 53px;
+    }
+    .banner-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .banner-content .button a.btn1 {
+        display: table;
+        margin-bottom: 20px;
+    }
+    /* where area here  */
+    .flipping-card {
+        grid-gap: 50px;
+        padding: 50px 30px;
+    }
+    .flipping-card .img::after {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+    }
+    .flipping-card .content h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .flipping-card .content .button a.btn1 {
+        margin-top: 20px;
+    }
+    .flipping-card .content .button a.btn2 {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 279px){
+    /* where area here  */
+    .flipping-card {
+        padding: 50px 15px;
+    }
+}

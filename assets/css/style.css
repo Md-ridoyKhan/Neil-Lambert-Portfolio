@@ -1,0 +1,214 @@
+/* header area here  */
+header{
+    background: #5C5C75;
+    padding-bottom: 100px;
+}
+.header {
+    background: transparent;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.header.sticky {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #5C5C75;
+    z-index: 10;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header-content .logo{}
+.header-content .logo img {
+    width: 200px;
+}
+.header-content ul.menu-list{}
+.header-content ul li {
+    display: inline;
+    margin-left: 12px;
+}
+.header-content ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.header-content ul li a:hover{
+    color: #18CCAA;
+}
+.header-content ul li span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.menu-bar {
+    display: none;
+}
+.menu-bar i, .close-bar i {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.close-bar {
+    display: none;
+}
+.close-bar i{}
+
+/* banner area here  */
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 827px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.banner-content{}
+.banner-content h1 {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 75px;
+    margin-bottom: 30px;
+}
+.banner-content p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+}
+.banner-content .button{}
+.banner-content .button a {
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #18CBA9;
+    border-radius: 0px;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    text-transform: capitalize;
+    background: transparent;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.banner-content .button a:hover {
+    background-color: #EDEDED;
+    color: #005DD9;
+    border: 1px solid #EDEDED;
+}
+.banner-content .button a.btn1 {
+    margin-right: 20px;
+}
+.banner-content .button a.btn2{}
+.banner img.banner-img {
+    width: 575px;
+    position: absolute;
+    top: 0;
+    left: calc(55%);
+    z-index: -1;
+}
+
+ /* where area here  */
+.flipping-card {
+    max-width: 1326px;
+    margin: 0 auto -371px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 4px 38px 40px -44px  #000;
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(2,calc(50% - 50px));
+    align-items: center;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+}
+.flipping-card .img{
+    position: relative;
+}
+.flipping-card .img img{
+    width: 100%;
+    height: auto;
+}
+.flipping-card .img::after {
+    content: '';
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    top: 28%;
+    right: -50px;
+    background-color: #18CCAA;
+    border-radius: 50%;
+}
+.flipping-card .content{}
+.flipping-card .content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.flipping-card .content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.flipping-card .content .button {}
+.flipping-card .content .button a{
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #18CBA9;
+    border-radius: 0px;
+    color: #005DD9;
+    padding: 10px 20px;
+    outline: none;
+    text-transform: capitalize;
+    background: transparent;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.flipping-card .content .button a:hover{
+    background-color: #005DD9;
+    color: #fff;
+    border: 1px solid #005DD9;
+}
+.flipping-card .content .button a.btn1 {
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.flipping-card .content .button a.btn2 {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* where area ends here  */
+
+
+
+
+
+
+
+
+
+
+
+

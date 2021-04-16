@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #5C5C75;
+}
+p{
+    color: #8C8C98;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin-bottom: 0;
+}
+li{
+    list-style: none;
+}
