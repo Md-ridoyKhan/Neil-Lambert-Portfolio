@@ -682,6 +682,27 @@ div.footer-top {
     color: #18CCAA;
     text-decoration: revert;
 }
+
+.footer-button .button{}
+.footer-button .button a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #005DD9;
+    border: 1px solid #005DD9;
+    border-radius: 0px;
+    padding: 10px 20px;
+    outline: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.footer-button .button a:hover{
+    color: #005DD9;
+    background: transparent;
+    border: 1px solid #18CBA9;
+}
+
 /* footer top area ends here  */
 
 /* footer area here  */
