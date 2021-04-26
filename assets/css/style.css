@@ -712,13 +712,13 @@ footer{
 .footer-items {
     display: flex;
     justify-content: space-around;
-    height: 70px;
     align-items: center;
 }
 .footer-items h2 {
     font-size: 14px;
     font-weight: 400;
     margin: 0;
+    line-height: 40px;
 }
 .footer-items ul li {
     display: inline-block;
@@ -729,28 +729,3 @@ footer{
     font-size: 15px;
 }
 /* footer  area ends here  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
