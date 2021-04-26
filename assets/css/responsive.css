@@ -13,7 +13,20 @@
 /************************* 
 > -- 1200px area here -- < 
 **************************/
-@media screen and (min-width: 1200px){}
+@media screen and (max-width: 1199px){
+    /* form design area here  */
+    .form-inner {
+        grid-template-columns: 100%;
+        grid-gap: 40px;
+    }
+    .form-content {
+        margin-left: 0px;
+        text-align: center;
+    }
+    div.form-group .input {
+        grid-template-columns: 100%;
+    }
+}
 /************************* 
 > -- 1124px area here -- < 
 **************************/
@@ -45,7 +58,7 @@
     .header-content ul.menu-list.active{
         left: 0;
     }
-    .close-bar {
+    ul.menu-list li.close-bar:first-child{
         display: block;
         position: absolute;
         top: 40px;
@@ -62,19 +75,97 @@
     }
     /* where area here  */
     .flipping-card {
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         padding: 100px 50px;
     }
-    .flipping-card .img::after {
-        width: 80px;
-        height: 80px;
-        right: -40px;
+    .you-can-item {
+        grid-template-columns: repeat(2, 1fr);
     }
+    /* selling area here  */
+    .selling-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* selling table  */
+    .selling-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+    }
+    /* work area here  */
+    .work-items,
+    .work-items-two{
+        grid-template-columns: 1fr;
+    }
+    ul.work-item li {
+        padding-bottom: 0;
+    }
+    .work-items-two .content{
+        order: 2;
+    }
+    .work-items .content {
+        margin-left: 0px;
+        margin-top: 70px;
+    }
+    .work-items-two {
+        margin: 70px 0px;
+    }
+    .work-items-two .content {
+        margin-right: 0;
+        margin-top: 70px;
+    }
+    /* acc-question area here  */
+    .acc-question-content {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+    /* footer top area here  */
+    .footer-content {
+        display: grid;
+        grid-gap: 40px;
+        justify-content: center;
+    }
+    .footer-logo .logo {
+        text-align: center;
+    }
+    .footer-logo .nav {
+        justify-content: center;
+    }
+    .footer-logo ul.nav li {
+        margin: 0px 20px;
+    }
+    .footer-button .button {
+        text-align: center;
+    }
+    .footer-button ul li {
+        text-align: center;
+    }
+    /* footer area here  */
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+    
 }
 /************************* 
 > -- 768px area here -- < 
 **************************/
-@media screen and (min-width: 768px){}
+@media screen and (max-width: 768px){
+    /* selling area here  */
+    /* selling table  */
+    .selling-table {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+    /* footer top area here  */
+    .footer-logo .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-logo ul.nav li {
+        margin: 0px 0px 15px 0px;
+    }
+}
 /************************* 
 > -- 576px area here -- < 
 **************************/
@@ -95,6 +186,9 @@
         font-size: 16px;
         line-height: 24px;
     }
+    .banner-content .button a {
+        width: 200px;
+    }
     .banner-content .button a.btn1 {
         display: table;
         margin-bottom: 20px;
@@ -105,19 +199,112 @@
         padding: 50px 30px;
     }
     .flipping-card .img::after {
-        width: 40px;
-        height: 40px;
-        right: -20px;
+        width: 50px;
+        height: 50px;
+        right: -25px;
     }
     .flipping-card .content h2 {
         margin-bottom: 20px;
         font-size: 30px;
+    }
+    .flipping-card .content .button a {
+        width: 200px;
     }
     .flipping-card .content .button a.btn1 {
         margin-top: 20px;
     }
     .flipping-card .content .button a.btn2 {
         margin-top: 20px;
+    }
+    /* you-can-card design area here  */
+    .you-can,
+    .form,
+    .selling, 
+    .work,
+    .acc-question{
+        padding: 80px 0px;
+    }
+    .you-can-item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .you-can .button a {
+        width: 200px;
+    }
+    /* form design area here   */
+    div.form-group button.submit {
+        padding: 10px 0px;
+    }
+    .form-content .button a.btn {
+        width: 200px;
+    }
+    .form-content .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-content .button a.btn1 {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .form-content h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    form.form-items {
+        padding: 40px 15px;
+    }
+
+    /* selling area here  */
+    .selling-content {
+        grid-template-columns: 1fr;
+    }
+    .selling-title h2 {
+        font-size: 30px;
+    }
+    /* work area here  */
+    .work-title h2 {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    .work-items .content,
+    .work-items-two .content  {
+        margin-top: 60px;
+    }
+    .work-items .content h2,
+    .work-items-two .content h2 {
+        font-size: 20px;
+    }
+    .work-items .img {
+        margin-right: 35px;
+    }
+    .work-items .img::before {
+        width: 70px;
+        height: 70px;
+        right: -35px;
+        top: 35%;
+    }
+    .work-items-two {
+        margin: 60px 0px;
+    }
+    .work-items-two .img{
+        margin-left: 35px;
+    }
+    .work-items-two .img::before {
+        width: 70px;
+        height: 70px;
+        left: -35px;
+        top: 35%;
+    }
+    /* acc-question area here  */
+    .acc-question .title h2 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 40px;
+    }
+    /* footer top area here  */
+    .footer-logo .logo img {
+        width: 260px;
     }
 }
 @media screen and (max-width: 279px){
