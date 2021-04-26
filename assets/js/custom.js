@@ -32,8 +32,7 @@ for(i = 0; i < acc.length; i++){
     });
 }
 
-    AOS.init({
-
-        duration: 1500,
-
-    });
+// aos area here 
+AOS.init({
+    duration: 1500,
+});
