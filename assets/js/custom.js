@@ -34,5 +34,9 @@ for(i = 0; i < acc.length; i++){
 
 // aos area here 
 AOS.init({
-    duration: 1500,
+    duration: 1000,
+    easing: 'ease',
+    // whether animation should happen only once - while scrolling down
+    once: true,
+
 });
